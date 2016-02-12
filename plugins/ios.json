@@ -5,9 +5,29 @@
     },
     "config_munge": {
         "files": {
+            "framework": {
+                "parents": {
+                    "CoreBluetooth.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
             "config.xml": {
                 "parents": {
                     "/*": [
+                        {
+                            "xml": "<feature name=\"BLE\"><param name=\"ios-package\" value=\"EVOBLE\" /></feature>",
+                            "count": 1
+                        },
                         {
                             "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
                             "count": 1
@@ -35,26 +55,6 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"BLE\"><param name=\"ios-package\" value=\"EVOBLE\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "framework": {
-                "parents": {
-                    "CoreGraphics.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
-                    "CoreBluetooth.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
                         }
                     ]
                 }
@@ -62,31 +62,30 @@
         }
     },
     "installed_plugins": {
+        "cordova-plugin-ble": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         },
         "cordova-plugin-eddystone": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-ble": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        }
-    }
+    "dependent_plugins": {}
 }

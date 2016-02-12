@@ -53,28 +53,28 @@
     },
     "installed_plugins": {
         "cordova-plugin-ble": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         },
         "cordova-plugin-eddystone": {
-            "PACKAGE_NAME": "com.ionicframework.eddyteddy946010"
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.hsccorp.eddyTeddy"
         }
     },
     "dependent_plugins": {}

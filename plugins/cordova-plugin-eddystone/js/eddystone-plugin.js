@@ -417,7 +417,6 @@ evothings.util = {};
 	 */
 	evothings.easyble.startScan = function(success, fail)
 	{
-		console.log ("Inside start Scan");
 		evothings.easyble.stopScan();
 		internal.knownDevices = {};
 		evothings.ble.startScan(function(device)
