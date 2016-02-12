@@ -2,7 +2,7 @@
 
 
 /* jslint browser: true*/
-/* global cordova,StatusBar,angular,console,evothings */
+/* global cordova,StatusBar,angular,console,evothings,moment */
 
 angular.module('starter.controllers', [])
 
@@ -11,6 +11,7 @@ angular.module('starter.controllers', [])
      
         
     
+        $scope.beaconList={};
         
         $scope.status = "Waiting...";
         $timeout (checkBeacons(),1000);
@@ -26,9 +27,12 @@ angular.module('starter.controllers', [])
                         {
                             // Update beacon data.
                            
-                            beacon.timeStamp = Date.now();
+                            beacon.timeStamp = moment().format ("MM Do YYYY, h:mm:ss a");
+                            console.log ("GOT " + JSON.stringify(beacon));
+                            $scope.beaconList[beacon.address] = JSON.stringify(beacon);
                             //beacons[beacon.address] = beacon;
-                            $scope.status = "Got a beacon: " + JSON.stringify(beacon);
+                            $scope.status = "Got last beacon at: "+beacon.timeStamp;
+                            //$timeout (checkBeacons(),1000);
                         },
                         function(error)
                         {

@@ -3,6 +3,12 @@
     <h2>Eddystone demo</h2>
     <p>
      {{status}}
+        
+      <ion-list >
+          <ion-item class="item-text-wrap" ng-repeat=" beacon in beaconList track by $index">
+               {{$index}} - {{beacon}}
+          </ion-item>
+      </ion-list>
       </p>
   </ion-content>
 </ion-view>
